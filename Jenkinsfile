@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'phpslave' } 
+    agent any
     environment {
         //be sure to replace "bhavukm" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "arohini1994/train-schedule"
