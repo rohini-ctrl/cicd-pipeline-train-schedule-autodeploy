@@ -1,8 +1,8 @@
 pipeline {
-    agent any
+    agent { label 'phpslave' } 
     environment {
         //be sure to replace "bhavukm" with your own Docker Hub username
-        DOCKER_IMAGE_NAME = "bhavukm/train-schedule"
+        DOCKER_IMAGE_NAME = "arohini1994/train-schedule"
     }
     stages {
         stage('Build') {
